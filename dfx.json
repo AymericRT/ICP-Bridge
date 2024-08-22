@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "IC-Bridge-backend": {
+      "main": "src/IC-Bridge-backend/main.mo",
+      "type": "motoko"
+    },
+    "IC-Bridge-frontend": {
+      "dependencies": [
+        "IC-Bridge-backend"
+      ],
+      "source": [
+        "src/IC-Bridge-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "IC-Bridge-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
